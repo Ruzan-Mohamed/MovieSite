@@ -30,7 +30,6 @@ body {
 }
 .login_btn button
 {
-  margin-top: 10%;
   border: var(--site_man_front-color);
   border-radius: 15%;
   background-color:var(--login_from_btn_color);
