@@ -13,13 +13,17 @@ body {
   background-color: var(--site_bg_color);
   font-family: "Orbitron", sans-serif;
 }
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
 .registration {
   border: #030408;
   border-radius: 10%;
-  margin: 25vh auto;
-  max-width: 60vw;
+  margin: 15vh auto;
+  max-width: 40vw;
   padding: 5%;
-  max-height: 100vh;
+  height: 100vh;
   align-items: center;
   text-align: center;
   display: flex;
@@ -28,16 +32,51 @@ body {
   justify-content: center;
   background-color: var(--login_from_bg_color);
 }
-.Registe_btn 
+.Registe_btn a 
 {
   border: var(--site_man_front-color);
   border-radius: 15%;
   background-color:var(--login_from_btn_color);
   padding: 5%;
   color: var(--site_man_front-color);
-
+  margin-top:3vh;
 }
 
-#btn:hover {
+.Registe_btn a:hover {
   background-color: #fff;
+  color: black;
 } 
+.registration p{
+  margin-top: 4vh;
+}
+.registration h2{
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  font-size: 5vh;
+  font-weight: 900;
+
+}
+.registration form{
+  font-size: 3vh;
+}
+ p a :hover{
+  color: var(--login_from_btn_color);
+  background-color: var(--login_from_btn_color);
+
+}
+input{  position: absolute;
+width: 50vh;
+outline: none;
+font-size: 1em;
+padding: 0 1vh;
+line-height:0vh ;
+border-radius: 10px;
+border: 2px solid #f0ffff;
+background: transparent;
+transition: 0.1s ease;
+z-index: 1111;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
