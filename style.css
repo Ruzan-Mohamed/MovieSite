@@ -42,6 +42,10 @@ a{
 
 }
 
-#btn:hover {
-  background-color: #fff;
+.Registe_btn :hover {
+  background-color:var(--site_man_front-color);
+  color: var(--site_bg_color);
 } 
+.registration p{
+  margin-top: 5vh;
+}
