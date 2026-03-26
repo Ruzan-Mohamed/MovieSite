@@ -19,7 +19,7 @@ body {
   margin: 15vh auto;
   max-width: 40vw;
   padding: 5%;
-  max-height: 90vh;
+  max-height: 80vh;
   align-items: center;
   text-align: center;
   display: flex;
@@ -28,7 +28,7 @@ body {
   justify-content: center;
   background-color: var(--login_from_bg_color);
 }
-.login_btn 
+.login_btn button
 {
   border: var(--site_man_front-color);
   border-radius: 15%;
