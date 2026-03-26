@@ -33,11 +33,11 @@ body {
   border: var(--site_man_front-color);
   border-radius: 15%;
   background-color:var(--login_from_btn_color);
-  padding: 5%;
   color: var(--site_man_front-color);
 
 }
 
 #btn:hover {
   background-color: #fff;
+  border-radius: 15%;
 } 
