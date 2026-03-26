@@ -38,3 +38,7 @@ body {
   color: var(--site_man_front-color);
 
 }
+
+#btn:hover {
+  background-color: #fff;
+} 
