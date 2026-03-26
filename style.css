@@ -16,10 +16,10 @@ body {
 .registration {
   border: #030408;
   border-radius: 10%;
-  margin: 10vh auto;
-  max-width: 40vw;
-  padding: 2%;
-  max-height: 100vh;
+  margin: 25vh auto;
+  max-width: 60vw;
+  padding: 5%;
+  max-height: 90vh;
   align-items: center;
   text-align: center;
   display: flex;
@@ -30,21 +30,10 @@ body {
 }
 .login_btn button
 {
-  margin-top: 10%;
   border: var(--site_man_front-color);
   border-radius: 15%;
   background-color:var(--login_from_btn_color);
   padding: 5%;
   color: var(--site_man_front-color);
-  max-width: 60vh;
 
-}
-.registration h2{
-  font: size 100vh;
-}
-.registration form{
-  margin-top: 5vh;
-}
-button :hover{
-  background-color: var(--site_man_front-color);
 }
