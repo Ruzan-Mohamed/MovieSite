@@ -1,13 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #020024;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(28, 28, 115, 0.94) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
-:root{
-    --site_bg_color:#030408;
-    --site_man_fron-color:#fff;
-    --login_from_bg_color:#12121A;
-    --login_from_btn_color:#E7B86D;
-   
-
+:root {
+  --site_bg_color: #030408;
+  --site_man_front-color: #fff;
+  --login_from_bg_color: #12121a;
+  --login_from_btn_color: #e7b86d;
 }
