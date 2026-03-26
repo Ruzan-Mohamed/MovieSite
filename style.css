@@ -28,7 +28,7 @@ body {
   justify-content: center;
   background-color: var(--login_from_bg_color);
 }
-.login_btn button
+.login_btn 
 {
   border: var(--site_man_front-color);
   border-radius: 15%;
@@ -37,3 +37,7 @@ body {
   color: var(--site_man_front-color);
 
 }
+
+#btn:hover {
+  background-color: #fff;
+} 
