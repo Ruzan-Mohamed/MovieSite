@@ -9,7 +9,32 @@
   --login_from_bg_color: #12121a;
   --login_from_btn_color: #e7b86d;
 }
-*body {
- background-color: var(--site_bg_color);
- font-family: "Orbitron", sans-serif;
+body {
+  background-color: var(--site_bg_color);
+  font-family: "Orbitron", sans-serif;
+}
+.registration {
+  border: #030408;
+  border-radius: 10%;
+  margin: 25vh auto;
+  max-width: 60vw;
+  padding: 5%;
+  max-height: 90vh;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--site_man_front-color);
+  justify-content: center;
+  background-color: var(--login_from_bg_color);
+}
+.login_btn button
+{
+  margin-top: 10%;
+  border: var(--site_man_front-color);
+  border-radius: 15%;
+  background-color:var(--login_from_btn_color);
+  padding: 5%;
+  color: var(--site_man_front-color);
+
 }
