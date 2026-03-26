@@ -13,17 +13,13 @@ body {
   background-color: var(--site_bg_color);
   font-family: "Orbitron", sans-serif;
 }
-a{
-  list-style: none;
-
-}
 .registration {
   border: #030408;
   border-radius: 10%;
-  margin: 15vh auto;
-  max-width: 40vw;
+  margin: 25vh auto;
+  max-width: 60vw;
   padding: 5%;
-  max-height: 80vh;
+  max-height: 100vh;
   align-items: center;
   text-align: center;
   display: flex;
@@ -32,7 +28,7 @@ a{
   justify-content: center;
   background-color: var(--login_from_bg_color);
 }
-.Registe_btn a
+.Registe_btn 
 {
   border: var(--site_man_front-color);
   border-radius: 15%;
@@ -42,10 +38,6 @@ a{
 
 }
 
-.Registe_btn :hover {
-  background-color:var(--site_man_front-color);
-  color: var(--site_bg_color);
+#btn:hover {
+  background-color: #fff;
 } 
-.registration p{
-  margin-top: 5vh;
-}
