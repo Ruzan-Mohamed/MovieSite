@@ -1,0 +1,60 @@
+cineverse/
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js                      # MongoDB connection
+│   │
+│   ├── controllers/
+│   │   ├── auth.controller.js         # register, login, me
+│   │   ├── movie.controller.js        # CRUD + search + trending
+│   │   ├── review.controller.js       # create, read, delete reviews
+│   │   ├── comment.controller.js      # create, read, delete comments
+│   │   └── admin.controller.js        # stats, ban users, manage content
+│   │
+│   ├── middleware/
+│   │   ├── auth.middleware.js         # JWT verify → req.user
+│   │   └── admin.middleware.js        # role === 'admin' guard
+│   │
+│   ├── models/
+│   │   ├── User.js                    # name, email, password, role, status
+│   │   ├── Movie.js                   # title, genre, year, video, poster
+│   │   ├── Review.js                  # movie, user, rating, text
+│   │   └── Comment.js                 # movie, user, text
+│   │
+│   ├── routes/
+│   │   ├── auth.routes.js             # POST /register  /login  /me
+│   │   ├── movie.routes.js            # GET /  /:id  POST /  DELETE /:id
+│   │   ├── review.routes.js           # GET /:movieId  POST  DELETE /:id
+│   │   ├── comment.routes.js          # GET /:movieId  POST  DELETE /:id
+│   │   └── admin.routes.js            # GET /stats  /users  PATCH /ban
+│   │
+│   ├── uploads/                       # Multer video/poster storage
+│   │
+│   ├── .env                           # PORT, MONGO_URI, JWT_SECRET
+│   ├── .env.example
+│   ├── package.json
+│   ├── seed.js                        # Seed demo movies + admin user
+│   └── server.js                      # Express app entry point
+│
+└── frontend/
+    ├── css/
+    │   ├── main.css                   # Variables, reset, typography
+    │   ├── components.css             # Cards, buttons, modals, forms
+    │   └── admin.css                  # Admin dashboard layout
+    │
+    ├── js/
+    │   ├── api.js                     # Base fetch wrapper + all API calls
+    │   ├── auth.js                    # Login, register, logout, token mgmt
+    │   ├── movies.js                  # Fetch + render movie grids/cards
+    │   ├── player.js                  # Video player logic
+    │   ├── reviews.js                 # Star rating, submit, render reviews
+    │   ├── comments.js                # Comment form + render thread
+    │   ├── admin.js                   # Admin dashboard tabs + actions
+    │   └── utils.js                   # Toast, formatters, helpers
+    │
+    └── pages/
+        ├── index.html                 # Home — hero, grids, nav
+        ├── browse.html                # Browse — search + genre filter
+        ├── movie.html                 # Movie detail + player + reviews
+        ├── profile.html               # User profile + my reviews
+        └── admin.html                 # Admin dashboard
