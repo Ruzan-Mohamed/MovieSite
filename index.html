@@ -9,35 +9,32 @@
   </head>
   <body>
     <div class="registration" id="form">
-      <div class="button-group">
-        <button class="Register">Register</button>
-        <button class="Login">Login</button>
-      </div>
       <h2>Registration Form</h2>
 
       <form action="#" method="post">
         <!-- First Name -->
         <label for="fname">First Name:</label><br />
-        <input type="text" id="fname" name="firstname" required /><br /><br />
+        <input type="text" id="fname" name="firstname" placeholder="Isuru" required /><br /><br />
 
         <!-- Last Name -->
         <label for="lname">Last Name:</label><br />
-        <input type="text" id="lname" name="lastname" required /><br /><br />
+        <input type="text" id="lname" name="lastname" placeholder="Perera" required /><br /><br />
 
         <!-- Email -->
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+        <input type="email" id="email" name="email" placeholder="isuru@example.com" required /><br /><br />
 
         <!-- Username -->
         <label for="username">Username:</label><br />
-        <input type="text" id="username" name="username" required /><br /><br />
+        <input type="text" id="username" name="username" placeholder="isuru_perera" required /><br /><br />
 
         <!-- Password -->
         <label for="password">Password:</label><br />
         <input
           type="password"
           id="password"
-          name="password"
+          name="password" 
+          minlength="8"
           required
         /><br /><br />
 
@@ -47,11 +44,12 @@
           type="password"
           id="repassword"
           name="repassword"
+          minlength="8"
           required
         /><br /><br />
 
         <div class="Registe_btn">
-          <a href="#Registe">
+          <a href="#Register">
             Registe
           </a>
         </div>
